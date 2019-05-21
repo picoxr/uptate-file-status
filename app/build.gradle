@@ -27,3 +27,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation files('libs/vractivity.jar')
 }
+
+task createJarDebug(type: Jar,dependsOn: ['build']) {
+    baseName "UpdateFile"
+    from 'build/intermediates/javac/debug/compileDebugJavaWithJavac/classes'
+    include('**')
+    exclude('**/R.class')
+    exclude('**/R$*.class')
+    exclude('**/BuildConfig.class')
+    exclude('**/MainActivity.class')
+    exclude('**/MainActivity$*.class')
+}
+

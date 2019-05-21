@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.pico.updatefilestatus.MainActivity">
 
     <Button
         android:id="@+id/bt_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-        android:text="Button"
+        android:text="create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="46dp"
-        android:text="Button"
+        android:text="update"
         app:layout_constraintStart_toStartOf="@+id/bt_create"
         app:layout_constraintTop_toBottomOf="@+id/bt_create" />
 
